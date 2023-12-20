@@ -1,0 +1,42 @@
+package lastproject;
+
+import java.util.List;
+
+public class Student {
+
+	String studentId;
+	String studentName;
+	List<Score> scoreList;
+
+	public Student(String studentId, String studentName, List<Score> scoreList) {
+		super();
+		this.studentId = studentId;
+		this.studentName = studentName;
+		this.scoreList = scoreList;
+	}
+
+	public String getStudentId() {
+		return studentId;
+	}
+
+	public void setStudentId(String studentId) {
+		this.studentId = studentId;
+	}
+
+	public String getStudentName() {
+		return studentName;
+	}
+
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+
+	public List<Score> getScoreList() {
+		return scoreList;
+	}
+
+	public void setScoreList(List<Score> scoreList) {
+		this.scoreList = scoreList;
+	}
+
+}
