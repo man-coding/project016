@@ -1,18 +1,24 @@
 package lastproject;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Student {
 
-	String studentId;
-	String studentName;
-	List<Score> scoreList;
+	public String studentId;
+	public String studentName;
+	public List<Score> scoreList;
 
 	public Student(String studentId, String studentName, List<Score> scoreList) {
 		super();
 		this.studentId = studentId;
 		this.studentName = studentName;
 		this.scoreList = scoreList;
+		scoreList = new ArrayList<Score>();
+	}
+
+	public void addScoreList(Score score) {
+		scoreList.add(score);
 	}
 
 	public String getStudentId() {

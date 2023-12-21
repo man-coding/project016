@@ -3,6 +3,7 @@ package lastproject;
 public interface GradeEvaluation {
 
 	public String getGrade(int score);
+
 }
 
 class MajorEvaluation implements GradeEvaluation {
@@ -10,7 +11,7 @@ class MajorEvaluation implements GradeEvaluation {
 	@Override
 	public String getGrade(int score) {
 		String grade;
-		
+
 		if (score >= 90) {
 			grade = "A";
 		} else if (score >= 80) {
@@ -25,7 +26,6 @@ class MajorEvaluation implements GradeEvaluation {
 
 		return grade;
 	}
-
 }
 
 class PassFailEvaluation implements GradeEvaluation {
@@ -33,12 +33,10 @@ class PassFailEvaluation implements GradeEvaluation {
 	@Override
 	public String getGrade(int score) {
 		String grade;
-
 		if (score >= 70) {
 			grade = "P";
 		} else
 			grade = "F";
 		return grade;
 	}
-
 }

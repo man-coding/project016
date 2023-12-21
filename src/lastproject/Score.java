@@ -41,4 +41,9 @@ class Score {
 		this.score = score;
 	}
 
+	@Override
+	public String toString() {
+		return "Score [studentId=" + studentId + ", subject=" + subject + ", score=" + score + "]";
+	}
+
 }
